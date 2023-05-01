@@ -15,4 +15,4 @@ jobs:
           REFRESH_TOKENS: ${{ secrets.eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhMzc5YTgyNmUyMGM0MGU1OTNkNWI0NWQxZmE4YjA3NCIsImF1ZCI6Ijc2OTE3Y2NjY2Q0NDQxYzM5NDU3YTA0ZjYwODRmYjJmIiwiZXhwIjoxNjkwNzEyNzM2LCJpYXQiOjE2ODI5MzY3MzZ9.PIP3MgBJ1CIiy6SoNn0zd8refiR9tZJRsTTYYhtF3GpsYtBL9OA5UUinm2sFPk4Q3nDot9Q9ufdiH72kXlb5Jw }}
           GP_TOKEN: ${{ secrets.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}}
           PUSH_TYPES: 'pushplus'
-          PUSHPLUS_TOKEN: ${{ secrets.8fefdb3c865f4b54abd52da0a72dfb9d}}
+          PUSHPLUS_TOKEN: ${{ secrets.48daf08ad21643c88062776759368e68 }}
