@@ -1,9 +1,7 @@
-name: Aliyun Signin
-
 on:
   schedule:
-   # 每天国际时间 17:00 运行一次, 中国时间 01:00
-    - cron: '20 17 * * *'
+   # 每天国际时间 14:40 运行一次, 中国时间 22:40
+    - cron: '40 14 * * *'
   workflow_dispatch:
 jobs:
   signin:
@@ -15,4 +13,21 @@ jobs:
           REFRESH_TOKENS: ${{ secrets.eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhMzc5YTgyNmUyMGM0MGU1OTNkNWI0NWQxZmE4YjA3NCIsImF1ZCI6Ijc2OTE3Y2NjY2Q0NDQxYzM5NDU3YTA0ZjYwODRmYjJmIiwiZXhwIjoxNjkwNzEyNzM2LCJpYXQiOjE2ODI5MzY3MzZ9.PIP3MgBJ1CIiy6SoNn0zd8refiR9tZJRsTTYYhtF3GpsYtBL9OA5UUinm2sFPk4Q3nDot9Q9ufdiH72kXlb5Jw }}
           GP_TOKEN: ${{ secrets.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}}
           PUSH_TYPES: 'pushplus'
+          DO_NOT_REWARD: 'false'
+          SERVERCHAN_SEND_KEY: ${{ secrets.SERVERCHAN_SEND_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           PUSHPLUS_TOKEN: ${{ secrets.cfce0d9ff0de4c0d88fa0fa8192aebae }}
+          PUSHPLUS_TOPIC: ${{ secrets.PUSHPLUS_TOPIC }}
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_TLS: ${{ secrets.SMTP_TLS }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          SMTP_SENDER: ${{ secrets.SMTP_SENDER }}
+          SMTP_RECEIVER: ${{ secrets.SMTP_RECEIVER }}
+          FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+          WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+          CQHTTP_ENDPOINT: ${{ secrets.CQHTTP_ENDPOINT }}
+          CQHTTP_USER_ID: ${{ secrets.CQHTTP_USER_ID }}
+          CQHTTP_ACCESS_TOKEN: ${{ secrets.CQHTTP_ACCESS_TOKEN }}
